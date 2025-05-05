@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route99 Car Rentals</title>
+    <link rel="stylesheet" href="cars.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Route99</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+
+    <section id="hero" class="fullscreen-hero">
+        <div class="hero-content">
+            <h1>Drive the Future</h1>
+            <p>Electric. Elegant. Efficient.</p>
+            <a href="#cars" class="btn">Explore Cars</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Route99</h2>
+        <p>Route99 is your one-stop destination for renting high-quality, well-maintained cars. Whether you're looking for a luxury ride, an SUV, or a compact car, we have the perfect vehicle for your needs.</p>
+    </section>
+
+    <section id="cars">
+        <h2>Our Cars</h2>
+        <div class="car-container">
+            <div class="car-card">
+                <h3>Nissan Altima</h3>
+                <p>Luxury sedan with smooth handling and great mileage.</p>
+                <p>&#8377;2500/day</p>
+                <img class="niss" src="nissan.png" alt="Nissan Altima" style="width:40%; height:auto;"><br>
+                <button>Rent Now</button>
+            </div>
+            <div class="car-card">
+                <h3>Tesla Model 3</h3>
+                <p>Electric car with cutting-edge technology and performance.</p>
+                <p>&#8377;1500/day</p>
+                <img src="tesla.png" alt="Tesla Model 3" style="width: 40%; height: auto;"><br>
+                <button>Rent Now</button>
+            </div>
+            <div class="car-card">
+                <h3>Tata Nexon</h3>
+                <p>Compact SUV, perfect for city drives and long trips.</p>
+                <p>&#8377;3500/day</p>
+                <img src="nexon.png" alt="Tata Nexon"style="width: 40%; height: auto;"><br>
+                <button>Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+    <footer class="tesla-footer">
+        <p>&copy; 2025 Route99 Car Rentals • All rights reserved</p>
+    </footer>
+
+    <script src="cars.js"></script>
+</body>
+</html>
