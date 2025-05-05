@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section */
+.fullscreen-hero {
+    height: 100vh;
+    background: url('rolls.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.fullscreen-hero .hero-content h1 {
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.fullscreen-hero .btn {
+    background-color: white;
+    color: black;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.fullscreen-hero .btn:hover {
+    background-color: #eee;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cars Section */
+#cars {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#cars h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.car-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.car-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.car-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.car-card h3 {
+    margin: 10px 0 5px;
+}
+
+.car-card p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.car-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.car-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form .btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
