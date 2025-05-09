@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route99 Car Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="cars.css">
 </head>
 <body>
@@ -34,51 +36,88 @@
         <h2>Our Cars</h2>
         <div class="car-container">
             <div class="car-card">
-                <h3>Nissan Altima</h3>
-                <p>Luxury sedan with smooth handling and great mileage.</p>
-                <p>&#8377;2500/day</p>
-                <img class="niss" src="nissan.png" alt="Nissan Altima" style="width:40%; height:auto;"><br>
-                <button>Rent Now</button>
-            </div>
+                <div class="car-card">
+                    <h3>Nissan Altima</h3>
+                    <p>Luxury sedan with smooth handling and great mileage.</p>
+                    <p>&#8377;2500/day</p>
+                    <img class="niss" src="nissan.png" alt="Nissan Altima" style="width:40%; height:auto;"><br>
+                    <button onclick="toggleDetails(this)">Rent Now</button>
+                    <div class="car-details" style="display: none;">
+                        <p><strong>Details:</strong> 5-seater, automatic transmission, 20 km/l mileage.</p>
+                        <p><strong>Rent:</strong> ₹2500 per day</p>
+                    </div>
+                </div>
+                
             <div class="car-card">
                 <h3>Tesla Model 3</h3>
                 <p>Electric car with cutting-edge technology and performance.</p>
                 <p>&#8377;1500/day</p>
                 <img src="tesla.png" alt="Tesla Model 3" style="width: 40%; height: auto;"><br>
-                <button>Rent Now</button>
+                <button onclick="toggleDetails(this)">Rent Now</button>
+                    <div class="car-details" style="display: none;">
+                        <p><strong>Details:</strong> 5-seater, automatic transmission, 405km range.</p>
+                        <p><strong>Rent:</strong> ₹2500 per day</p>
+                    </div>
             </div>
             <div class="car-card">
                 <h3>Tata Nexon</h3>
                 <p>Compact SUV, perfect for city drives and long trips.</p>
                 <p>&#8377;3500/day</p>
                 <img src="nexon.png" alt="Tata Nexon"style="width: 40%; height: auto;"><br>
-                <button>Rent Now</button>
+                <button onclick="toggleDetails(this)">Rent Now</button>
+                    <div class="car-details" style="display: none;">
+                        <p><strong>Details:</strong> 5-seater, automatic transmission, 17.18-24.08 km/l mileage.</p>
+                        <p><strong>Rent:</strong> ₹3500 per day</p>
+                    </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact-form">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Name" required>
 
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="9100-111-333" required>
+            
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email"placeholder="adam@gmail.com" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
+            <label for="car-type">Car Type:</label>
+            <select id="car-type" name="car-type" required>
+                <option value="">-- Select Car Type --</option>
+                <option value="sedan">Sedan</option>
+                <option value="electric">Electric Car</option>
+                <option value="suv">SUV</option>
+            </select>
+        
+                <button type="submit" class="btn">Send Message</button>
         </form>
+        
+        
     </section>
+    <section id="footer">
+        <h2>Follow us on</h2>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        
+        </section>
 
-    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
 
     <footer class="tesla-footer">
         <p>&copy; 2025 Route99 Car Rentals • All rights reserved</p>
     </footer>
-
     <script src="cars.js"></script>
 </body>
 </html>
