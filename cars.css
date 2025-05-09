@@ -43,6 +43,13 @@ body {
 .navbar nav a:hover {
     color: #ff6600;
 }
+.toggle-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
 
 /* Hero Section */
 .fullscreen-hero {
@@ -157,6 +164,13 @@ body {
 .car-card button:hover {
     background-color: #0056b3;
 }
+.car-details {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    display: none;
+}
+
 
 /* Contact Section */
 #contact {
